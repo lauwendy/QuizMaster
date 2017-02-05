@@ -32,6 +32,16 @@ public class QuizGenerator {
     private ArrayList<Question> myQuestions;
     private int myQuestionIndex;
 
+    // create getter method to get some transient state (the question you are at) for the activity instance
+    public int getMyQuestionIndex() {
+        return myQuestionIndex;
+    }
+
+    // create setter method to set saved question state
+    public int setQuestionIndex(int index) {
+        return myQuestionIndex;
+    }
+
     public QuizGenerator(){
         myQuestions = new ArrayList<>();
         makeQuiz();
