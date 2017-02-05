@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QuizMaster</string>
+    <string name="left_button">Click Left</string>
+    <string name="right_button">Click Right</string>
+</resources>

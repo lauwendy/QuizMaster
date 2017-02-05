@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    tools:context="edu.duke.compsci290.quizmaster.MainActivity">
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Quiz Time!"/>
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="What type of quiz would you like?"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/two_choice_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Two Choice Quiz"
+            android:layout_marginRight="25dp"
+            android:onClick="setTwoChoiceClick"/>
+
+        <Button
+            android:id="@+id/four_choice_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Four Choice Quiz"
+            android:layout_marginLeft="25dp"
+            android:onClick="setFourChoiceClick"/>
+
+
+</LinearLayout>
+
+</LinearLayout>
